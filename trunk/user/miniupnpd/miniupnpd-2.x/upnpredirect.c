@@ -678,8 +678,8 @@ remove_unused_rules(struct rule_state * list)
 		list = tmp->next;
 		free(tmp);
 	}
-	if(n>0)
-		syslog(LOG_NOTICE, "removed %d unused rules", n);
+	/*if(n>0)
+		syslog(LOG_NOTICE, "removed %d unused rules", n);*/
 }
 
 /* upnp_get_portmappings_in_range()
