@@ -616,8 +616,8 @@ delete_rule_and_commit(unsigned int index, IPTC_HANDLE h,
 	else if(!iptc_commit(&h))
 #endif
 	{
-		syslog(LOG_ERR, "%s() : iptc_commit(): %s\n",
-	    	   logcaller, iptc_strerror(errno));
+		/*syslog(LOG_ERR, "%s() : iptc_commit(): %s\n",
+	    	   logcaller, iptc_strerror(errno));*/
 		r = -1;
 	}
 	if(h)
