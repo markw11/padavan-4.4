@@ -1129,8 +1129,8 @@ iptc_init_verify_and_append(const char * table,
 	if(!iptc_commit(&h))
 #endif
 	{
-		syslog(LOG_ERR, "%s() : iptc_commit() error : %s\n",
-		       logcaller, iptc_strerror(errno));
+		/*syslog(LOG_ERR, "%s() : iptc_commit() error : %s\n",
+		       logcaller, iptc_strerror(errno));*/
 		if(h)
 #ifdef IPTABLES_143
 			iptc_free(h);
